@@ -1,0 +1,57 @@
+{
+    "pages": [
+        "pages/index/main",
+        "pages/manager/main",
+        "pages/manager/donateInsert/main",
+        "pages/manager/donateInsertSuccess/main",
+        "pages/manager/donateInsertPrintQR/main",
+        "pages/manager/saleInsert/main",
+        "pages/manager/saleInsertSuccess/main",
+        "pages/manager/apply/main",
+        "pages/manager/applyResult/main",
+        "pages/manager/cancel/main",
+        "pages/manager/cancelResult/main",
+        "pages/me/main",
+        "pages/me/myDonation/main",
+        "pages/me/mySchedule/main",
+        "pages/donate/main"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "慈善商店",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "color": "#999",
+        "backgroundColor": "#fafafa",
+        "selectedColor": "#333",
+        "borderStyle": "white",
+        "list": [{
+                "text": "首页",
+                "pagePath": "pages/index/main",
+                "iconPath": "static/tabs/orders.png",
+                "selectedIconPath": "static/tabs/orders-active.png"
+            },
+            {
+                "text": "捐赠物品",
+                "pagePath": "pages/donate/main",
+                "iconPath": "static/tabs/orders.png",
+                "selectedIconPath": "static/tabs/orders-active.png"
+            },
+            {
+                "text": "店长排班",
+                "pagePath": "pages/manager/main",
+                "iconPath": "static/tabs/orders.png",
+                "selectedIconPath": "static/tabs/orders-active.png"
+            },
+            {
+                "text": "我的",
+                "pagePath": "pages/me/main",
+                "iconPath": "static/tabs/orders.png",
+                "selectedIconPath": "static/tabs/orders-active.png"
+            }
+        ],
+        "position": "bottom"
+    }
+
+}

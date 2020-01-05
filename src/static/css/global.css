@@ -1,0 +1,318 @@
+div {
+    font-size: 32rpx;
+    color: #002251;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+button {
+    margin: 0rpx;
+}
+
+.container {
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+    padding-top: 40rpx;
+    width: 690rpx;
+    top: 0rpx;
+}
+
+.container_bk {
+    background: url(../images/bk.svg);
+    -webkit-mask-image: linear-gradient(0deg, rgba(255, 255, 255, 0.0001) 9.15%, #FFFFFF 77.78%);
+    mask-image: linear-gradient(0deg, rgba(255, 255, 255, 0.0001) 9.15%, #FFFFFF 77.78%);
+    -webkit-mask-size: 100% 400rpx;
+    mask-size: 100% 400rpx;
+    z-index: -2;
+    height: 400rpx;
+    width: 100%;
+    position: absolute;
+}
+
+
+/* 中文板块标题 */
+
+.title_cn {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 56rpx;
+    line-height: 78rpx;
+    letter-spacing: 0.8rpx;
+    color: #002251;
+}
+
+
+/* 英文板块副标题 */
+
+.subtitle_en {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32rpx;
+    line-height: 38rpx;
+    color: #7A869A;
+}
+
+.font_blue32 {
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32rpx;
+    line-height: 44rpx;
+    color: #0041C4;
+}
+
+.font_grey {
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32rpx;
+    line-height: 56rpx;
+    /* or 175% */
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #7A869A;
+}
+
+.font_darkblue32 {
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32rpx;
+    line-height: 44rpx;
+    color: #002251;
+}
+
+
+/* 排班List相关样式 */
+
+.schedule_list {
+    margin: 0 30rpx;
+}
+
+.schedule_item_line {
+    height: 96rpx;
+    width: 630;
+    opacity: 0.75;
+    border-bottom: 2rpx solid #eaebed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.schedule_item_line_title {
+    font-weight: 600;
+    font-size: 28rpx;
+    line-height: 40rpx;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #C1C7D0;
+}
+
+.schedule_item_col1 {
+    width: 230rpx;
+    font-weight: 600;
+    font-size: 28rpx;
+    line-height: 32rpx;
+}
+
+.schedule_item_col2 {
+    width: 200rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-weight: 600;
+    font-size: 28rpx;
+    line-height: 32rpx;
+}
+
+.schedule_item_col2 button {
+    margin: 0rpx;
+}
+
+.schedule_item_col3 {
+    width: 200rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-weight: 600;
+    font-size: 28rpx;
+    line-height: 32rpx;
+}
+
+.schedule_item_col3 button {
+    margin: 0rpx;
+}
+
+.schedule_item_line img {
+    width: 48rpx;
+    height: 48rpx;
+    border-radius: 48rpx;
+    margin-right: 12rpx;
+}
+
+.schedule_item_line p {
+    line-height: 48rpx;
+}
+
+.schedule_btnApply {
+    width: 160rpx;
+    height: 64rpx;
+    background: #0041C4;
+    border-radius: 10rpx;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28rpx;
+    line-height: 40rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+}
+
+.schedule_btnCancel {
+    width: 160rpx;
+    height: 64rpx;
+    background: #FF6364;
+    border-radius: 10rpx;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28rpx;
+    line-height: 40rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+}
+
+.arrow {
+    opacity: 0.5;
+    transform: scale(0.7, 1.3);
+}
+
+
+/* 修改原生radio */
+
+radio .wx-radio-input {
+    width: 35rpx;
+    height: 35rpx;
+    border: 2rpx solid #999;
+    border-radius: 100%;
+    background: none;
+}
+
+
+/* 选中后的 背景样式 （红色背景 无边框 可根据UI需求自己修改） */
+
+radio .wx-radio-input.wx-radio-input-checked {
+    width: 35rpx;
+    /* 选中后对勾大小，不要超过背景的尺寸 */
+    height: 35rpx;
+    /* 选中后对勾大小，不要超过背景的尺寸 */
+    border: 2rpx solid #0041C4;
+    background: #0041C4;
+}
+
+
+/* 选中后的 对勾样式 （白色对勾 可根据UI需求自己修改） */
+
+radio .wx-radio-input.wx-radio-input-checked::before {
+    border-radius: 50%;
+    /* 圆角 */
+    width: 35rpx;
+    /* 选中后对勾大小，不要超过背景的尺寸 */
+    height: 35rpx;
+    /* 选中后对勾大小，不要超过背景的尺寸 */
+    line-height: 35rpx;
+    text-align: center;
+    font-size: 30rpx;
+    /* 对勾大小 30rpx */
+    color: #fff;
+    /* 对勾颜色 白色 */
+    border: 2rpx solid #0041C4;
+    background: #0041C4;
+    transform: translate(-50%, -50%) scale(1);
+    -webkit-transform: translate(-50%, -50%) scale(1);
+}
+
+
+/* btn相关样式 */
+
+.btn-form-submit {
+    width: 630rpx;
+    height: 88rpx;
+    background: #0041c4;
+    border-radius: 10rpx;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32rpx;
+    line-height: 44rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.btn-mid-blue {
+    background: #0041c4;
+    width: 248rpx;
+    height: 88rpx;
+    border-radius: 10rpx;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32rpx;
+    line-height: 44rpx;
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-mid-green {
+    background: #47d187;
+    width: 248rpx;
+    height: 88rpx;
+    border-radius: 10rpx;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32rpx;
+    line-height: 44rpx;
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-apply-confirm {
+    background: #0041c4;
+    width: 292rpx;
+    height: 88rpx;
+    border-radius: 10rpx;
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-apply-back {
+    width: 292rpx;
+    height: 88rpx;
+    border-radius: 10rpx;
+    border: 2rpx solid #0041C4;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
